@@ -1,0 +1,33 @@
+<app-my-header name="Лабораторна робота №1"> </app-my-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Завдання 2 </ion-card-title>
+    </ion-card-header>
+    <ion-card-context>
+      <p class="p_background">
+        На заданому
+проміжку чисел [a,b]
+знайдіть кількість
+чисел, які при діленні
+на 5 дають в остачі 4,
+а при діленні на 6
+дають в остачі 5.
+      </p>
+      <ion-item>
+        <ion-label position="floating">a</ion-label>
+        <ion-input type="number" id="a" value="5" #Inputa></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">b</ion-label>
+        <ion-input type="number" id="a" value="15" #Inputb></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="dob(Inputa.value, Inputb.value)"
+        >Розрахунок</ion-button
+      >
+      <ion-item>
+        <p>Результат обчислення {{d}}</p>
+      </ion-item>
+    </ion-card-context>
+  </ion-card>
+</ion-content>

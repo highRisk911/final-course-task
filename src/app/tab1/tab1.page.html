@@ -1,0 +1,38 @@
+<app-my-header name="Лабораторна робота №1"> </app-my-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Завдання 1 </ion-card-title>
+    </ion-card-header>
+    <ion-card-context>
+      <p class="p_background">
+        Задано три числа.
+Якщо всі вони
+непарні, то знайти їх
+суму. В іншому
+випадку – середнє
+арифметичне.
+      </p>
+      <ion-item>
+        <ion-label position="floating">Перше число</ion-label>
+        <ion-input type="number" id="a" value="1" #Inputa></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Друге число</ion-label>
+        <ion-input type="number" id="b" value="2" #Inputb></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Третє число</ion-label>
+        <ion-input type="number" id="c" value="3" #Inputc></ion-input>
+      </ion-item>
+      <ion-button
+        expand="block"
+        (click)="ras(Inputa.value,Inputb.value,Inputc.value)"
+        >Розрахунок</ion-button
+      >
+      <ion-item>
+        <p>Результат обчислення {{d}}</p>
+      </ion-item>
+    </ion-card-context>
+  </ion-card>
+</ion-content>

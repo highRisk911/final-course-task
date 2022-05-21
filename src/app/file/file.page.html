@@ -1,0 +1,33 @@
+<app-my-header name="Лабораторна робота №3"> </app-my-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Лабораторна робота №3</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text>Читання даних з JSON файлу</ion-text>
+      <ion-item>
+        <ion-label position="floating">Бал</ion-label>
+        <ion-input type="string" id="average" #averageInput></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="searchStudent(averageInput.value)">
+        Студенти з таким середнім балом
+      </ion-button>
+      <ion-button expand="block" (click)="load()">Завантажити</ion-button>
+      <ion-item>
+        <ion-list>
+          <ion-item *ngFor="let item of data; index as i">
+            <ion-label>
+              <p [ngStyle]="{color: getColor(item.average)}">
+                <span>Студент: </span>
+                {{item.FIO}}
+                <span>, Бал: </span>
+                {{item.average}}
+              </p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

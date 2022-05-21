@@ -1,0 +1,7 @@
+{
+  "name": "hurt",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
