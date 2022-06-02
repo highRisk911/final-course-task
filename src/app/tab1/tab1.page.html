@@ -6,23 +6,19 @@
     </ion-card-header>
     <ion-card-context>
       <p class="p_background">
-        Задано три числа.
-Якщо всі вони
-непарні, то знайти їх
-суму. В іншому
-випадку – середнє
-арифметичне.
+          Розробити сервіс для додавання і віднімання кутових значень, заданих градусами, мінутами і секундами.
+
       </p>
       <ion-item>
-        <ion-label position="floating">Перше число</ion-label>
+        <ion-label position="floating">Мінути</ion-label>
         <ion-input type="number" id="a" value="1" #Inputa></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">Друге число</ion-label>
+        <ion-label position="floating">Градуси</ion-label>
         <ion-input type="number" id="b" value="2" #Inputb></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">Третє число</ion-label>
+        <ion-label position="floating">Радіани</ion-label>
         <ion-input type="number" id="c" value="3" #Inputc></ion-input>
       </ion-item>
       <ion-button
@@ -31,7 +27,7 @@
         >Розрахунок</ion-button
       >
       <ion-item>
-        <p>Результат обчислення {{d}}</p>
+        <p>Результат обчислення <br>Мінути: {{a}}<br>Градуси: {{b}}<br>Радіани: {{c}}</p>
       </ion-item>
     </ion-card-context>
   </ion-card>

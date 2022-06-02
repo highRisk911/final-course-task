@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./my-header.component.scss'],
 })
 export class MyHeaderComponent implements OnInit {
-  @Input() name: string = 'Лабораторні роботи';
+  @Input() name: string = 'ЗАЛІК';
 
   constructor() {}
 
